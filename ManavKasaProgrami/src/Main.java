@@ -3,23 +3,6 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        /*
-        Meyveler ve KG Fiyatları
-
-Armut : 2,14 TL
-Elma : 3,67 TL
-Domates : 1,11 TL
-Muz: 0,95 TL
-Patlıcan : 5,00 TL
-Örnek Çıktı;
-
-Armut Kaç Kilo ? :0
-Elma Kaç Kilo ? :1
-Domates Kaç Kilo ? :1
-Muz Kaç Kilo ? :2
-Patlıcan Kaç Kilo ? :3
-Toplam Tutar : 21.68 TL
-         */
     double kgArmut = 2.14;
     double kgElma = 3.67;
     double kgDomates = 1.11;
