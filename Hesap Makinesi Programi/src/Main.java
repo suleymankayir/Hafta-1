@@ -6,7 +6,7 @@ public class Main {
         int ilkSayi,ikinciSayi,islem;
 
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Lütfen islem yapilmasi istenen sayilari giriniz");
+        System.out.println("Lütfen islem yapilmasi istenen sayilari giriniz: ");
 
         ilkSayi = scanner.nextInt();
         ikinciSayi = scanner.nextInt();
