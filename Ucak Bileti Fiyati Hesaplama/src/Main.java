@@ -10,13 +10,13 @@ public class Main {
         km = scanner.nextInt();
         if (km < 0){
             System.out.println("Hatalı Veri Girdiniz !");
-        } else if (km >=0){
+        } else{
             double mesafeÜcreti = km * 0.10 ;
             System.out.print("Yasinizi giriniz: ");
             yas = scanner.nextInt();
             if (yas < 0){
                 System.out.println("Hatalı Veri Girdiniz !");
-            } else if (yas > 0){
+            } else{
 
                 if (yas < 12) {
                     indirimTutari = mesafeÜcreti*0.5;
@@ -46,8 +46,6 @@ public class Main {
                     }
                 }
             }
-        } else {
-            System.out.println("Hatalı Veri Girdiniz !");
         }
 
 
