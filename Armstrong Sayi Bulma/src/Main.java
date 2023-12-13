@@ -4,8 +4,9 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Lütfen bir sayi giriniz");
-        int sayi = scanner.nextInt();
-        int bolunenSayi = sayi;
+        int input = scanner.nextInt();
+        int sayi = input;
+        int bolunenSayi = input;
         int basNumber = 0;
         int sayilarToplami = 1;
         int armstrongSayi = 0;
@@ -14,15 +15,19 @@ public class Main {
             bolunenSayi /= 10;
             basNumber++;
         }
-        while (sayi > 0){
+        while (input > 0){
             for (int i = 1; i <=basNumber ; i++) {
-                sayilarToplami *= (sayi%10) ;
+                sayilarToplami *= (input %10) ;
             }
             armstrongSayi += sayilarToplami;
             sayilarToplami=1;
-            sayi/=10;
+            input /=10;
         }
-        System.out.println(armstrongSayi);
+        if (armstrongSayi == sayi){
+            System.out.println("Armstrong sayisi");
+        } else {
+            System.out.println("Armstrong sayisi degil");
+        }
 
     }
 }
